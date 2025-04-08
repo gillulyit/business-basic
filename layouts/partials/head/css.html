@@ -1,0 +1,21 @@
+{{- with resources.Get "css/colors.css" | minify }}
+{{- if hugo.IsDevelopment }}
+<link rel="stylesheet" href="{{ .Permalink }}">
+{{- else }}
+{{- with . | fingerprint }}<link rel="stylesheet" href="{{ .Permalink }}">{{ end }}
+{{- end }}
+{{- end }}
+{{- with resources.Get "css/main.css" | minify }}
+{{- if hugo.IsDevelopment }}
+<link rel="stylesheet" href="{{ .Permalink }}">
+{{- else }}
+{{- with . | fingerprint }}<link rel="stylesheet" href="{{ .Permalink }}">{{ end }}
+{{- end }}
+{{- end }}
+{{- with resources.Get "css/custom.css" | minify }}
+{{- if hugo.IsDevelopment }}
+<link rel="stylesheet" href="{{ .Permalink }}">
+{{- else }}
+{{- with . | fingerprint }}<link rel="stylesheet" href="{{ .Permalink }}">{{ end }}
+{{- end }}
+{{- end }}

@@ -1,0 +1,21 @@
+:root {
+    --bg-color: #eeeeee;
+    --bg-page: #ddddddcf;
+    --bg-nav: #000000;
+    --bg-nav-active: #0000ff;
+    --bg-nav-hover: #d45500;
+
+    --fg-body: #000000;
+    --fg-a: #0000ff;
+    --fg-nav: #ffffff;
+}
+
+.dark {
+    --bg-color: #000000;
+    --bg-page: #333333cf;
+    --bg-nav: #000000;
+
+    --fg-body: #ffffff;
+    --fg-a: #6b6bff;
+    --fg-nav: #ffffff;
+}

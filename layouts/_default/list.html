@@ -1,0 +1,15 @@
+{{- define "main" }}
+<main class="formatted">
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+</main>
+<div class="pagelist formatted grid">
+{{- range .RegularPages.ByTitle }}
+<div class="pageitem">
+<a href="{{ .RelPermalink }}">
+<div class="title">{{ .Title }}</div>
+</a>
+</div>
+{{- end }}
+</div>
+{{- end }}

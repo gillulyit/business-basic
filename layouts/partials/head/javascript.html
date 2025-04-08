@@ -1,0 +1,9 @@
+{{- with resources.Get "js/main.js" | minify }}
+{{- if hugo.IsDevelopment }}
+<script src="{{ .Permalink }}" defer></script>
+{{- else }}
+{{- with . | fingerprint }}
+<script src="{{ .Permalink }}" defer></script>
+{{- end }}
+{{- end }}
+{{- end }}

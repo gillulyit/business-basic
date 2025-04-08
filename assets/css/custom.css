@@ -1,0 +1,20 @@
+/* This is a blank CSS file which can be overridden by placing and editing a file in your site's assets/css/custom.css file */
+
+/* For instance you can change the variables in :root and .dark to make your own color scheme */
+
+/* :root {
+/*  --bg-color: hex code or rgb function to specify what color to tint the background;
+    --bg-page: hexa code or rgba to specify the background of the whole page;
+    --bg-nav: hex code or rgb to specify the nav bar background;
+    --bg-nav-active: hex code or rgb to specify the color of the current nav button;
+    --bg-nav-hover: hex code or rgb to specify the color of the hovered nav button;
+
+    --fg-body: hex code or rgb to specify text color;
+    --fg-a: hex code or rgb to specify link text color;
+    --fg-nav: hex code or rgb to specify nav text color; 
+    } */
+
+/* .dark {
+    (same variables as :root, but they only apply when dark mode is set
+    if you have them specified here)
+    } */

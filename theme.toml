@@ -1,0 +1,12 @@
+name = "Simple Business"
+license = "MIT"
+description = "A theme created for Gilluly IT Services, but shared with the world."
+
+# Taxonomy terms
+tags = ["responsive", "company"]
+features = ["responsive", "logo", "shortcodes"]
+
+# If the theme has a single author
+[author]
+  name = "Gilluly IT Services"
+  homepage = "https://www.gillulyit.com"

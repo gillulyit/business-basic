@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+{{ partial "head/main.html" . }}
+</head>
+<body style="--bg-image: url({{ .Site.BaseURL }}pics/background.png)" onload="setResponse()">
+<div id="page">
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+{{- block "main" . }}
+{{- end }}
+{{ partial "footer/inside.html" . }}
+</div>
+{{ partial "footer/outside.html" .}}
+{{- with .Site.Params.hiddentext }}
+<p class="hidden">{{ . }}</p>
+{{- end }}
+</body>
+</html>

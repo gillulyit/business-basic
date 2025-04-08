@@ -1,0 +1,11 @@
+<hr>
+<div id="insidefooter" class="formatted">
+<div>
+{{- with .Site.GetPage "footer" }}
+{{ .Content }}
+{{- end }}
+</div>
+<div class="icons">
+{{ partial "socials.html" . }}
+</div>
+</div>

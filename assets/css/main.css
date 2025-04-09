@@ -20,9 +20,6 @@ body {
 #darkswitch {
     width: 50px;
     height: 50px;
-    position: absolute;
-    top: 2.5rem;
-    right: 1.5rem;
     background: none;
     border: none;
     display: flex;
@@ -142,6 +139,12 @@ nav a.navlink:hover {
         border-radius: 0.15rem;
         overflow-x: auto;
     }
+    iframe.wide {
+        display: block;
+        width: 90%;
+        aspect-ratio: 16 / 9;
+        margin: 0.5rem auto;
+    }
 }
 
 .pagelist {
@@ -254,12 +257,6 @@ nav a.navlink:hover {
 
 .hidden {
     display: none;
-}
-
-@media (max-width: 450px) {
-    #darkswitch {
-        position: static;
-    }
 }
 
 @media (min-width: 800px) {

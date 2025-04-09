@@ -35,6 +35,7 @@ function disableDarkMode() {
 
 if (darkmode == "active") enableDarkMode();
 
+window.addEventListener("DOMContentLoaded", setResponse)
 window.addEventListener("resize", setResponse)
 darkswitch.addEventListener("click", () => {
     darkmode = localStorage.getItem("darkmode");

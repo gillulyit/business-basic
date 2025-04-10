@@ -125,6 +125,7 @@ nav a.navlink:hover {
         margin-left: 2rem;
     }
     img {
+        display: block;
         max-width: 90%;
         max-height: 70dvh;
         margin: 0.5rem auto;

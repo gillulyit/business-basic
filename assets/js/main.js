@@ -9,6 +9,7 @@ function setResponse() {
         navlinks.style.display = "flex";
     } else {
         menubutton.style.display = "block";
+        menubutton.innerText = "Menu";
         navlinks.style.display = "none";
     }
 }

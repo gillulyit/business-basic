@@ -20,11 +20,15 @@ hugo.toml
 [[params.social]]
 url = "your profile link here"
 icon = "x"
+label = "Link to X/Twitter"
 [[params.social]]
 url = "your profile link here"
 icon = "facebook"
+label = "Link to Facebook"
 ...
 ```
+
+Update 4/10/2025: Added label function to apply ARIA label element to links for better screen reader capability.
 
 ## Installation
 

@@ -20,7 +20,7 @@ As an example, let's say you want to create a blog post about an event, organize
 
 ## Archetypes (Page Templates)
 
-There are a few archetypes or page templates included in this theme. Articles and blog posts (not the section page) should be automatic, everything else you can specify manually by modifying the `hugo new` command with a -k switch.
+There are a few archetypes or page templates included in this theme. Hugo tries to guess which one to if you don't manually specify it with the -k switch, but in my experience, it can be wrong for it so I typically use the -k switch.
 
 For instance, if you want to create a new page to appear on the main nav menu, with the permalink of /contact, you can use the following command:
 
@@ -34,7 +34,7 @@ Available archetypes are as follows:
 
 - main: For a page to show up on the main menu
 - footer: Render is set to never, for use on the footer page
-- articles: For a date sensitive blog/articles post
+- article: For a date sensitive blog/articles post
 
 ## Front Matter
 

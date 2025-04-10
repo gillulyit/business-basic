@@ -38,9 +38,7 @@ Available archetypes are as follows:
 
 ## Front Matter
 
-Each page should have a front matter which is between three -'s on both the top and bottom of it. It uses the yaml configuration language. If you see a section with three +'s on either end instead, it will be formatted on toml config language.
-
-I'm more familiar with yaml so I generally write my files for that. But the main difference you will see is toml will use an = sign between the key and value, and yaml will use a :.
+Each page should have a front matter which is between three +'s on both the top and bottom of it. It uses the toml configuration language.
 
 The values are pretty self explanatory. For instance, changing the value after the title key, will change the page title of the post/page. Changing the weight key after the menu specifications, will change the priority of how it's sorted.
 

@@ -1,5 +1,6 @@
-name = "Simple Business"
+name = "Business Basic"
 license = "MIT"
+licenselink = "https://github.com/gillulyit/business-basic/blob/main/LICENSE"
 description = "A theme created for Gilluly IT Services, but shared with the world."
 
 # Taxonomy terms

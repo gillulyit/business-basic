@@ -1,0 +1,14 @@
+{{ define "title" }}404 Page Not Found | {{ .Site.Title }}{{ end }}
+
+{{- define "main" }}
+<main>
+<div class="formatted">
+<h1>Error 404 - Page Not Found</h1>
+<p>The resource at <em><span id="pagepath"></span></em> could not be found. Please check the URL and try again.</p>
+</div>
+</main>
+<script>
+const pagepath = document.getElementById("pagepath")
+pagepath.innerText = window.location.pathname
+</script>
+{{- end }}

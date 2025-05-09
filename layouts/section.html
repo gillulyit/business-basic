@@ -5,9 +5,16 @@
 </main>
 <div class="pagelist formatted grid">
 {{- range .RegularPages.ByTitle }}
-<div class="pageitem">
+<div class="pageitem">{{ $item := . }}
 <a href="{{ .RelPermalink }}">
+{{- with .Params.image }}
+<img src="{{ $item.RelPermalink }}{{ . }}" alt="{{ $item.Title }}">
+{{- end -}}
 <div class="title">{{ .Title }}</div>
+{{- with .Description }}
+<br>
+{{ . }}
+{{- end -}}
 </a>
 </div>
 {{- end }}

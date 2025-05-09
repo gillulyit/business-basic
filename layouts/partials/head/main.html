@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{{ .Summary | plainify }}">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}">
 {{- partial "head/css.html" . }}
 {{- partial "head/javascript.html" . }}
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.jpg" type="image/x-icon">

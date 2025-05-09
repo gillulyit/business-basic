@@ -1,0 +1,16 @@
+<div class="pagelist formatted grid">
+{{- range where .Site.RegularPages "Section" (.Get 0) }}
+<div class="pageitem">{{ $item := . }}
+<a href="{{ .RelPermalink }}">
+{{- with .Params.image }}
+<img src="{{ $item.RelPermalink }}{{ . }}" alt="{{ $item.Title }}">
+{{- end -}}
+<div class="title">{{ .Title }}</div>
+{{- with .Description }}
+<br>
+{{ . }}
+{{- end -}}
+</a>
+</div>
+{{- end }}
+</div>

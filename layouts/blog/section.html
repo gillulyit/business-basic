@@ -1,0 +1,36 @@
+{{- define "main" }}
+<main class="formatted">
+<h1>{{ .Title }}</h1>
+{{ .Content -}}
+</main>
+<div class="pagelist formatted">
+{{- $paginator := .Paginate .RegularPages }}
+{{- range $paginator.Pages }}
+<div class="pageitem">{{ $item := . }}
+<a href="{{ .RelPermalink }}">
+<div class="title">{{ .Title }}</div>
+<div>
+{{ .Date.Format "2006 Jan 02" }}
+</div>
+{{- with .Summary }}
+<div class="description">
+{{ . | plainify }}
+</div>
+{{- end }}
+</a>
+</div>
+{{- end }}
+</div>
+<div class="paginator">
+<div>
+{{- with $paginator.Prev }}
+<a href="{{ .URL }}">< Newer</a>
+{{- end }}
+</div>
+<div>
+{{- with $paginator.Next }}
+<a href="{{ .URL }}">Older ></a>
+{{- end }}
+</div>
+</div>
+{{- end }}

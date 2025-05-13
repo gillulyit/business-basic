@@ -1,0 +1,19 @@
+{{- define "main" }}
+<main class="formatted">
+<h1>{{ .Title }}</h1>
+<em>{{ .Date.Format "Monday, January 2, 2006 at 03:04PM" }}</em>
+{{ .Content -}}
+</main>
+<div class="paginator">
+<div>
+{{- with .NextInSection }}
+<a href="{{ .RelPermalink }}"><<br>{{ .Title }}</a>
+{{- end }}
+</div>
+<div>
+{{- with .PrevInSection }}
+<a href="{{ .RelPermalink }}">><br>{{ .Title }}</a>
+{{- end }}
+</div>
+</div>
+{{- end }}

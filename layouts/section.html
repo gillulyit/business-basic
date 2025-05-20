@@ -4,7 +4,7 @@
 {{ .Content -}}
 </main>
 <div class="pagelist formatted grid">
-{{- range .RegularPages.ByTitle }}
+{{- range .RegularPages }}
 <div class="pageitem">{{ $item := . }}
 <a href="{{ .RelPermalink }}">
 {{- with .Params.image }}
